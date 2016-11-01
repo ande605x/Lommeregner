@@ -13,6 +13,7 @@ namespace Lommeregner
         {
 
             Calculate calcu = new Calculate();
+            UserInput useri = new UserInput();
 
             Console.WriteLine("Velkommen til Lommeregner");
             Console.WriteLine("=========================");
@@ -24,15 +25,14 @@ namespace Lommeregner
             while (sentinel != "n")
             {
                 Console.WriteLine("Indtast tal 1: ");
-                string input1 = Console.ReadLine();
-                int tal1 = Int32.Parse(input1);
+                int tal1 =  useri.ReadNumber();
+                
 
                 Console.WriteLine("Indtast en matematisk oprator: ");
-                string input2 = Console.ReadLine();
+                string input2 = useri.ReadOperator();
 
                 Console.WriteLine("Indtast tal 2: ");
-                string input3 = Console.ReadLine();
-                int tal2 = Int32.Parse(input3);
+                int tal2 = useri.ReadNumber();
 
                 Console.WriteLine($"Resultat: " + calcu.mathcalc(tal1, tal2, input2));
 

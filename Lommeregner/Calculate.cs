@@ -30,6 +30,10 @@ namespace Lommeregner
                 else
                     return tal1 / tal2;
             }
+            else if (mathsymbol == "%")
+            {
+                return tal1 % tal2;
+            }
 
             else if (mathsymbol == "-")
             {
