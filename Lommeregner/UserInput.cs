@@ -8,13 +8,13 @@ namespace Lommeregner
 {
     class UserInput
     {
-        public int ReadNumber()
+        public double ReadNumber()
         {
            
-            int tal1 = 0;
+            double tal1 = 0;
             string input1 = Console.ReadLine();
 
-            while (!(Int32.TryParse(input1 , out tal1)))
+            while (!(Double.TryParse(input1 , out tal1)))
             {
                 Console.WriteLine("Indtast et TAL: ");
                 input1 = Console.ReadLine();

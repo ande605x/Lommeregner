@@ -8,7 +8,7 @@ namespace Lommeregner
 {
     class Calculate
     {
-        public int mathcalc(int tal1, int tal2, string mathsymbol)
+        public double mathcalc(double tal1, double tal2, string mathsymbol)
         {
             if (mathsymbol == "+")
             {
