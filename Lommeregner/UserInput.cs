@@ -33,7 +33,7 @@ namespace Lommeregner
 
             while (!(input == "+" || input == "-" || input == "/" || input == "*"))
             {
-                Console.WriteLine("Indtast en matematisk operator af [+ - * /]");
+                Console.WriteLine("Indtast en matematisk operator af [+ - * / %]");
                 input = Console.ReadLine();
             }
 

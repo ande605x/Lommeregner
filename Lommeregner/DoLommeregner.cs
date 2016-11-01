@@ -28,7 +28,7 @@ namespace Lommeregner
                 int tal1 =  useri.ReadNumber();
                 
 
-                Console.WriteLine("Indtast en matematisk oprator: ");
+                Console.WriteLine("Indtast en matematisk oprator[+ - * / %]: ");
                 string input2 = useri.ReadOperator();
 
                 Console.WriteLine("Indtast tal 2: ");
