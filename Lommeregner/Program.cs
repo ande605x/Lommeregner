@@ -10,6 +10,11 @@ namespace Lommeregner
     {
         static void Main(string[] args)
         {
+            DoLommeregner lomme = new Lommeregner.DoLommeregner();
+            lomme.MyCode();
+
+            Console.WriteLine("Press key to close");
+            Console.ReadKey();
         }
     }
 }
